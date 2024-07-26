@@ -41,12 +41,12 @@ The DNA model in the simulation.
 Left: The 3D geometry of the cell nucleus ( 14.2μm x 14.2μm x 5μm ) used in this macro file, showing the continuous fractal interior. Right: The beam geometry used in the simulation, showing the incident protons as a parallel beam.
 
 The chromosome as region of interest for analysis is defined using:
- 
+
 ```
 /chromosome/add cell ellipse 7100 2500 7100 0 0 0 nm 0 0 0
 ```
 ## Particle source
-A proton source plane with circle radius 7.1 um was located 3 μm from the cell center. 
+A proton source plane with circle radius 7.1 um was located 3 μm from the cell center.
 ```
 /gps/pos/type Plane
 /gps/pos/shape Circle
@@ -68,23 +68,23 @@ Direct damage model sets 5 eV for the lower break threshold and 37.5 eV for the 
 
 /dnadamage/indirectOHBaseChance 1.0
 /dnadamage/indirectOHStrandChance 0.405
-/dnadamage/inductionOHChance 0.00
+/dnadamage/inductionOHChance 0.0
 
 /dnadamage/indirectHBaseChance 1.0
 /dnadamage/indirectHStrandChance 0.0
-/dnadamage/inductionHChance 0.00
+/dnadamage/inductionHChance 0.0
 
 /dnadamage/indirectEaqBaseChance 1.0
 /dnadamage/indirectEaqStrandChance 0.0
-/dnadamage/inductionEaqChance 0.00
+/dnadamage/inductionEaqChance 0.0
 ```
 ## Results
-Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using human_cell.C macro file. 
+Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using human_cell.C macro file.
 
 ![human_Cell]({{"/assets/images/human_cell_results.png" | relative_url}})
 {: .text-left}
 
-- **Species Hits (/Gy/Mbp)** is defined by radical + DNA reactions, 
+- **Species Hits (/Gy/Mbp)** is defined by radical + DNA reactions,
 for example: EaqStrandHits is e_aq + DNA backbone
 
 
@@ -96,5 +96,4 @@ for example: EaqStrandHits is e_aq + DNA backbone
 ![human_Cell]({{"/assets/images/human_cell_Fra.png" | relative_url}})
 {: .text-left}
 
-*Fragments distribution of DNA. A fragment is defined by a distance between two DSBs.* 
-
+*Fragments distribution of DNA. A fragment is defined by a distance between two DSBs.*
