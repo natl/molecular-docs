@@ -15,7 +15,7 @@ parent: Available geometries
 {:toc}
 
 ## Overview
-The simulation geometry is based upon a past parameter study [1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters. 
+The simulation geometry is based upon a past parameter study [1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters.
 ## Geometry
 The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216bp long straight DNA segments in a 100×30×30 nm placement volume. Radical kill distance [Damage model]( {{ "docs/overview/damage-model" | relative_url }} )  was set to 9 nm, as well as the range for direct interaction was set to 7 A.
 
@@ -29,7 +29,7 @@ The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000
 /dnageom/checkOverlaps false
 
 /dnageom/radicalKillDistance 9 nm
-/dnageom/interactionDirectRange 6.5 angstrom
+/dnageom/interactionDirectRange 7 angstrom
 
 /dnageom/placementSize 30 30 100 nm
 /dnageom/fractalScaling 1 1 1 nm
@@ -56,7 +56,7 @@ Primary electrons are generated randomly, with a random direction in a smaller 5
 /run/beamOn 100000
 ```
 ## Damage model
-Direct damage model uses the 17.5 eV for lower and upper break thresholds. 
+Direct damage model uses the 17.5 eV for lower and upper break thresholds.
 ```
 /dnadamage/directDamageLower 17.5 eV
 /dnadamage/directDamageUpper 17.5 eV
@@ -67,11 +67,11 @@ Direct damage model uses the 17.5 eV for lower and upper break thresholds.
 
 /dnadamage/indirectHBaseChance 1.0
 /dnadamage/indirectHStrandChance 0.65
-/dnadamage/inductionHChance 0.00
+/dnadamage/inductionHChance 0.0
 
 /dnadamage/indirectEaqBaseChance 1.0
 /dnadamage/indirectEaqStrandChance 0.65
-/dnadamage/inductionEaqChance 0.00
+/dnadamage/inductionEaqChance 0.0
 ```
 ## Results
 Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using cylinders.C macro file.
