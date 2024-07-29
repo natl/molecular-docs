@@ -15,7 +15,7 @@ parent: Available geometries
 {:toc}
 
 ## Overview
-The simulation geometry is based upon a past parameter study [1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters. 
+The simulation geometry is based upon a past parameter study [1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters.
 ## Geometry
 The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216bp long straight DNA segments in a 100×30×30 nm placement volume. Radical kill distance [Damage model]( {{ "docs/overview/damage-model" | relative_url }} )  was set to 9 nm, as well as the range for direct interaction was set to 7 A.
 
@@ -43,6 +43,12 @@ The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000
 ![cylinders]({{"/assets/images/cylinderImage.png" | relative_url}})
 {: .text-center}
 
+The chromosome as region of interest for analysis is defined using:
+
+```
+/chromosome/add cylinder sphere 3000 0 0 0 nm
+```
+
 ## Particle source
 Primary electrons are generated randomly, with a random direction in a smaller 500 nm sphere in the centre of the test region. The primary particles with energies no greater than 4.5 keV cannot escape the larger spherical region, and all primaries see an equivalently random region.
 ```
@@ -56,7 +62,7 @@ Primary electrons are generated randomly, with a random direction in a smaller 5
 /run/beamOn 100000
 ```
 ## Damage model
-Direct damage model uses the 17.5 eV for lower and upper break thresholds. 
+Direct damage model uses the 17.5 eV for lower and upper break thresholds.
 ```
 /dnadamage/directDamageLower 17.5 eV
 /dnadamage/directDamageUpper 17.5 eV
