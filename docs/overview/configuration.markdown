@@ -56,7 +56,7 @@ format: name path
 </td><td><ol><li>true/false check overlaps (bool, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/verbose</td><td>Verbosity for DNA geometry
 </td><td><ol><li>int verbose level (int, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/setSmartVoxels</td><td>Optimisation value (int) for smart voxels
 The G4 default is 2
-</td><td><ol><li>Optimasation value (int, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/interactionDirectRange</td><td>Critical range to start recording SSBs from direct effects
+</td><td><ol><li>Optimisation value (int, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/interactionDirectRange</td><td>Critical range to start recording SSBs from direct effects
 </td><td><ol><li>Range (double, Default: Not Set, Omittable: False)</li><li>Unit (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/radicalKillDistance</td><td>Distance from base pairs at which to kill radicals
 </td><td><ol><li>Range (double, Default: Not Set, Omittable: False)</li><li>Unit (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/activateHistoneScavenging</td><td>Activate Histone scavenging function
 </td><td><ol><li>true/false Histone function (bool, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/drawCellVolumes</td><td>Draw cell/chromosome volumes rather than DNA (makes DNA invisible)

@@ -43,6 +43,12 @@ The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000
 ![cylinders]({{"/assets/images/cylinderImage.png" | relative_url}})
 {: .text-center}
 
+The chromosome as region of interest for analysis is defined using:
+
+```
+/chromosome/add cylinder sphere 3000 0 0 0 nm
+```
+
 ## Particle source
 Primary electrons are generated randomly, with a random direction in a smaller 500 nm sphere in the centre of the test region. The primary particles with energies no greater than 4.5 keV cannot escape the larger spherical region, and all primaries see an equivalently random region.
 ```
