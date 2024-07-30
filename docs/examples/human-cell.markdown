@@ -14,10 +14,10 @@ parent: Available geometries
 {:toc}
 
 ## Overview
-DNA damage induced in a simplified human fibroblast cell can be simulated using the provided macro files. A large amount of memory and computer performance will be required for this example. The parameters used in the macro human_cell.mac and shown in this page are further described in Phys. Med. 112 (2023) 102613 ([link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }}))
+DNA damage induced by irradiation in a simplified human fibroblast cell can be simulated using the provided **human_cell.mac** macro file. A large amount of memory and computer performance will be required for this example. The parameters used in the macro file and shown in this page are further described in Phys. Med. 112 (2023) 102613 ([link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }}))
 
 ## Geometry
-This geometry consists of a continuous chain defined by taking a basic Hilbert curve. This fractal is broken into cubic regions of straight and turned chromatin sections [DNA placement]({{"/docs/geometry-library/dna-placements" | relative_url}}). This chain is included in an ellipsoid with semi-dimensions 7.1x2.5x7.1 μm, which imitates a cell nucleus. Only cubes that are completely included in the ellipsoid are considered as parts of the chain, which length is 6.4 Gbp. Bp density of the produced cell corresponds to ~0.015 bp/nm3.
+The default geometry (macro **human_cell.mac**) consists of a continuous chain defined by taking a basic Hilbert curve. This fractal is broken into cubic regions of straight and turned chromatin sections [DNA placement]({{"/docs/geometry-library/dna-placements" | relative_url}}). This chain is included in an ellipsoid with semi-dimensions 7.1 μm x 2.5  μm x 7.1 μm, which imitates a cell nucleus. Only cubes that are completely included in the ellipsoid are considered as parts of the chain, which length is 6.4 Gbp. Bp density of the produced cell corresponds to ~0.015 bp/nm3.
 ```
 /world/worldSize 50 um
 /cell/radiusSize 14 2.5 14 um
@@ -33,20 +33,20 @@ This geometry consists of a continuous chain defined by taking a basic Hilbert c
 /dnageom/placementVolume turntwist geometries/turned_twisted_solenoid_750_withHistone.txt true
 /dnageom/placementVolume straight geometries/straight_solenoid_750_withHistone.txt
 ```
-The DNA model in the simulation.
+The DNA geometrical model and the irradiation setup in the simulation are as follows:
 
 ![human_Cell]({{"/assets/images/humanCell_irradiation.png" | relative_url}})
 {: .text-right}
 
-Left: The 3D geometry of the cell nucleus ( 14.2μm x 14.2μm x 5μm ) used in this macro file, showing the continuous fractal interior. Right: The beam geometry used in the simulation, showing the incident protons as a parallel beam.
+Left: The 3D geometry of the cell nucleus (14.2 μm x 14.2 μm x 5 μm) used in the human_cell.mac macro file, showing the continuous fractal interior. Right: The beam geometry used in the simulation, showing the incident protons as a parallel beam.
 
-The chromosome as region of interest for analysis is defined using:
+The chromosome as region of interest for damage analysis is defined using:
 
 ```
 /chromosome/add cell ellipse 7100 2500 7100 0 0 0 nm 0 0 0
 ```
 ## Particle source
-A proton source plane with circle radius 7.1 um was located 3 μm from the cell center.
+A proton source plane with circle radius 7.1 um is located 3 μm from the cell center.
 ```
 /gps/pos/type Plane
 /gps/pos/shape Circle
@@ -79,7 +79,7 @@ Direct damage model sets 5 eV for the lower break threshold and 37.5 eV for the 
 /dnadamage/inductionEaqChance 0.0
 ```
 ## Results
-Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using human_cell.C macro file.
+Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using the **human_cell.C** ROOT macro file.
 
 ![human_Cell]({{"/assets/images/human_cell_results.png" | relative_url}})
 {: .text-left}
@@ -97,3 +97,14 @@ for example: EaqStrandHits is e_aq + DNA backbone
 {: .text-left}
 
 *Fragments distribution of DNA. A fragment is defined by a distance between two DSBs.*
+
+## List of macros
+The example provides three macros to simulate the cellular irradiation of three different cell types, see Phys. Med. 112 (2023) 102613 ([link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }})) :
+
+- **human_cell.mac** : this is the default geometry of a simplified human fibroblast, as described above (ellipsoid with semi-dimensions 7.1 μm x 2.5  μm x 7.1 μm)
+
+
+- **human_cell_HTB177.mac** : this is a simplified model of a human large cell lung carcinoma, represented by an ellipsoid with semi-dimensions 8.55 μm x 2.5 μm x 6.425 μm
+
+
+- **human_cell_MCF7.mac** : this is a simplified model of a human breast adenocarcinoma, represented by an ellipsoid with semi-dimensions 7.005 μm × 2.50 μm × 5.30 μm

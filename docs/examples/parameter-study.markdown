@@ -15,9 +15,10 @@ parent: Available geometries
 {:toc}
 
 ## Overview
-The simulation geometry is based upon a past parameter study [1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters.
+The simulation geometry is based upon a past parameter study [1] of direct and indirect DNA damage yields in straight DNA fibres to study the impacts of the different parameters. The **cylinders.mac** macro file can be used for such simulation.
+
 ## Geometry
-The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216bp long straight DNA segments in a 100×30×30 nm placement volume. Radical kill distance [Damage model]( {{ "docs/overview/damage-model" | relative_url }} )  was set to 9 nm, as well as the range for direct interaction was set to 7 A.
+The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000 individual 216 bp long straight DNA segments in a 100 nm × 30 nm × 30 nm placement volume. Radical kill distance [Damage model]( {{ "docs/overview/damage-model" | relative_url }} ) is set to 9 nm and the range for direct interaction is set to 7 A.
 
 ```
 /world/worldSize 10200 nm
@@ -43,7 +44,7 @@ The geometry for parameter sweeps consists of a 3 μm sphere filled with 200.000
 ![cylinders]({{"/assets/images/cylinderImage.png" | relative_url}})
 {: .text-center}
 
-A spherical chromosome named cylinder is defined for analysis using:
+A spherical chromosome named "cylinder" is defined for analysis using:
 
 ```
 /chromosome/add cylinder sphere 3000 0 0 0 nm
@@ -80,7 +81,7 @@ Direct damage model uses the 17.5 eV for lower and upper break thresholds.
 /dnadamage/inductionEaqChance 0.0
 ```
 ## Results
-Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using cylinders.C macro file.
+Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}})) is analysed by using the **cylinders.C** ROOT macro file.
 
 ![cylinders]({{"/assets/images/cylinders.png" | relative_url}})
 {: .text-left}
@@ -101,7 +102,7 @@ to open the Qt visualiser. Then use the mac file that you want, e.g.
 ```
 /control/execute cylinders.mac
 ```
-For such visualization, large amount of RAM is needed. For example using cylinders DNA geometries, to visualize 200 cylinders, ~2.5 Gb are needed. For 2000 cylinders, ~11 Gb are needed.
+For such visualization, a large amount of RAM is needed. For example using cylinders DNA geometries, to visualize 200 cylinders, ~2.5 Gb are needed. For 2000 cylinders, ~11 Gb are needed.
 
 ## Reference
 1. Computational modelling of low-energy electron-induced DNA damage by early physical and chemical events, Nikjoo et al.,Int. J. Rad. Bio., 1997, 71, 467.
