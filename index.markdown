@@ -9,10 +9,10 @@ description: molecularDNA allows easy simulation of radiation-induced DNA damage
 permalink: /
 ---
 
-# molecularDNA
+# **molecularDNA**
 {: .fs-9 }
 
-Radiation-induced DNA damage simulations in Geant4.
+**Radiation-induced DNA damage simulations in Geant4**
 {: .fs-6 .fw-300 }
 
 molecularDNA is a Geant4-DNA example built to allow easy simulation of
