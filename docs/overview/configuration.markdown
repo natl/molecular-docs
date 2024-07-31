@@ -43,13 +43,110 @@ Set to zero to score placement volumes independently
 </td><td><ol><li>xradius (double, Default: Not Set, Omittable: False)</li><li>yradius (double, Default: Not Set, Omittable: False)</li><li>zradius (double, Default: Not Set, Omittable: False)</li><li>Unit (str, Default: Not Set, Omittable: False)</li></ol></td></tr></tbody></table>
 
 
+## chromosome
+
+
+<table>
+<thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead>
+<tbody>
+<tr><td>chromosome/add</td><td>
+Add a chromosomal region for analysis of damage. <br>
+Format: shape name geometry-commands<br>
+shape is sphere || cyl.<br>
+geometry-commands are:<br>
+- for sphere: rad x y z unit [rx ry rz]<br>
+- for cyl: rad height x y z unit [rx ry rz]<br>
+Rotations are optional and in degrees.
+</td>
+<td><ol>
+<li>radius (double, Default: Not Set, Omittable: False)</li>
+<li>height (double, Default: Not Set, Omittable: False)</li>
+<li>xradius (double, Default: Not Set, Omittable: False)</li>
+<li>yradius (double, Default: Not Set, Omittable: False)</li>
+<li>zradius (double, Default: Not Set, Omittable: False)</li>
+<li>Unit (str, Default: Not Set, Omittable: False)</li>
+<li>[xrotation] (double, Default: Not Set, Omittable: False)</li>
+<li>[yrotation] (double, Default: Not Set, Omittable: False)</li>
+<li>[zrotation] (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+</tbody>
+</table>
+
+## damage
+
+<table>
+<thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead>
+<tbody>
+
+<tr><td>dnadamage/directDamageLower</td><td>Minimum Energy required for an SSB. Chance grows linearly until it reaches the upper value.</td>
+<td><ol>
+<li>threshold (double, Default: Not Set, Omittable: False)</li>
+<li>Unit (str, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+
+<tr><td>dnadamage/directDamageUpper</td><td>Energy required for an SSB to definitely occur</td>
+<td><ol>
+<li>threshold (double, Default: Not Set, Omittable: False)</li>
+<li>Unit (str, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+
+<tr><td>dnadamage/indirectOHBaseChance</td><td>Chance [0,1] of a OH damaging a base</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+<tr><td>dnadamage/indirectOHStrandChance</td><td>Chance [0,1] of a OH damaging sugar-phosphate</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+<tr><td>dnadamage/inductionOHChance</td><td>Chance [0,1] of a Base + OH -> strand break</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+
+<tr><td>dnadamage/indirectHBaseChance</td><td>Chance [0,1] of a H damaging a base</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+<tr><td>dnadamage/indirectHStrandChance</td><td>Chance [0,1] of a H damaging sugar-phosphate</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+<tr><td>dnadamage/inductionHChance</td><td>Chance [0,1] of a Base + H -> strand break</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+
+<tr><td>dnadamage/indirectEaqBaseChance</td><td>Chance [0,1] of a Eaq damaging a base</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+<tr><td>dnadamage/indirectEaqStrandChance</td><td>Chance [0,1] of a Eaq damaging sugar-phosphate</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+<tr><td>dnadamage/inductionEaqChance</td><td>Chance [0,1] of a Base + Eaq -> strand break</td>
+<td><ol>
+<li>chance (double, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+
+</tbody>
+</table>
+
 
 ## dnageom
 
 
-<table ><thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead><tbody><tr><td>dnageom/placementVolume</td><td>Set a placement volume
-format: name path
-</td><td><ol><li>name path (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/definitionFile</td><td>Path to file that defines placement locations
+<table ><thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead>
+<tbody>
+
+<tr>
+<td>dnageom/placementVolume</td>
+<td>Set a placement volume
+format: name path</td>
+<td><ol><li>name path (str, Default: Not Set, Omittable: False)</li></ol></td>
+</tr>
+
+<tr><td>dnageom/definitionFile</td><td>Path to file that defines placement locations
 </td><td><ol><li>path (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/placementSize</td><td>Side length for each placement (x, y, z)
 </td><td><ol><li>xlength (double, Default: Not Set, Omittable: False)</li><li>ylength (double, Default: Not Set, Omittable: False)</li><li>zlength (double, Default: Not Set, Omittable: False)</li><li>Unit (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/fractalScaling</td><td>Scaling of XYZ in fractal definition file
 </td><td><ol><li>xlength (double, Default: Not Set, Omittable: False)</li><li>ylength (double, Default: Not Set, Omittable: False)</li><li>zlength (double, Default: Not Set, Omittable: False)</li><li>Unit (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/checkOverlaps</td><td>Check overlaps in DNA geometry region
@@ -60,8 +157,35 @@ The G4 default is 2
 </td><td><ol><li>Range (double, Default: Not Set, Omittable: False)</li><li>Unit (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/radicalKillDistance</td><td>Distance from base pairs at which to kill radicals
 </td><td><ol><li>Range (double, Default: Not Set, Omittable: False)</li><li>Unit (str, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/activateHistoneScavenging</td><td>Activate Histone scavenging function
 </td><td><ol><li>true/false Histone function (bool, Default: Not Set, Omittable: False)</li></ol></td></tr><tr><td>dnageom/drawCellVolumes</td><td>Draw cell/chromosome volumes rather than DNA (makes DNA invisible)
-</td><td><ol><li>true/false draw cell volumes (bool, Default: Not Set, Omittable: False)</li></ol></td></tr></tbody></table>
+</td><td><ol><li>true/false draw cell volumes (bool, Default: Not Set, Omittable: False)</li></ol></td></tr>
 
+<tr>
+<td>dnageom/setVoxelPlacementAnglesAsMultiplesOfPi</td>
+<td>Take the angles in the voxel placement file as multiples of pi. <br>
+E.g. set to true if the angle 0.5 should mean 90 degrees.</td>
+<td><ol><li>true/false (bool, Default: Not Set, Omittable: False)</li></ol></td>
+</tr>
+
+<tr>
+<td>dnageom/useCustomMoleculeSizes</td>
+<td>Enable custom molecule sizes. <br>
+These can be set via /dnageom/moleculeSize.</td>
+<td><ol><li>true/false (bool, Default: Not Set, Omittable: False)</li></ol></td>
+</tr>
+
+<tr><td>dnageom/moleculeSize</td><td>Set a molecule size in angstrom. format: molecule_name x y z. <br>
+E.g.: PHOSPHATE 3 4 5. <br>
+Note: molecule names are case insensitive.</td>
+<td><ol>
+<li>name (str, Default: Not Set, Omittable: False)</li>
+<li>xlength (double, Default: Not Set, Omittable: False)</li>
+<li>ylength (double, Default: Not Set, Omittable: False)</li>
+<li>zlength (double, Default: Not Set, Omittable: False)</li>
+<li>Unit (str, Default: Not Set, Omittable: False)</li>
+</ol></td></tr>
+
+
+</tbody></table>
 
 
 ## world
