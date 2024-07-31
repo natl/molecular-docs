@@ -9,7 +9,7 @@ permalink: docs/overview/configuration
 # Configuration
 {: .no_toc }
 
-The custom Geant4 commands available in the molecularDNA application are listed here.
+The custom Geant4 commands available in the molecularDNA application are listed here. These commands are implemented in the messenger classes of molecularDNA.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -52,22 +52,22 @@ Set to zero to score placement volumes independently
 <tr><td>chromosome/add</td><td>
 Add a chromosomal region for analysis of damage. <br>
 Format: shape name geometry-commands<br>
-shape is sphere || cyl.<br>
+shape is sphere or cyl<br>
 geometry-commands are:<br>
-- for sphere: rad x y z unit [rx ry rz]<br>
-- for cyl: rad height x y z unit [rx ry rz]<br>
+- for sphere: radius x y z unit [rx ry rz]<br>
+- for cyl: radius height x y z unit [rx ry rz]<br>
 Rotations are optional and in degrees.
 </td>
 <td><ol>
 <li>radius (double, Default: Not Set, Omittable: False)</li>
 <li>height (double, Default: Not Set, Omittable: False)</li>
-<li>xradius (double, Default: Not Set, Omittable: False)</li>
-<li>yradius (double, Default: Not Set, Omittable: False)</li>
-<li>zradius (double, Default: Not Set, Omittable: False)</li>
+<li>x (double, Default: Not Set, Omittable: False)</li>
+<li>y (double, Default: Not Set, Omittable: False)</li>
+<li>z (double, Default: Not Set, Omittable: False)</li>
 <li>Unit (str, Default: Not Set, Omittable: False)</li>
-<li>[xrotation] (double, Default: Not Set, Omittable: False)</li>
-<li>[yrotation] (double, Default: Not Set, Omittable: False)</li>
-<li>[zrotation] (double, Default: Not Set, Omittable: False)</li>
+<li>[xrotation (double, Default: Not Set, Omittable: False)</li>
+<li>yrotation (double, Default: Not Set, Omittable: False)</li>
+<li>zrotation] (double, Default: Not Set, Omittable: False)</li>
 </ol></td></tr>
 </tbody>
 </table>
@@ -80,13 +80,13 @@ Rotations are optional and in degrees.
 
 <tr><td>dnadamage/directDamageLower</td><td>Minimum Energy required for an SSB. Chance grows linearly until it reaches the upper value.</td>
 <td><ol>
-<li>threshold (double, Default: Not Set, Omittable: False)</li>
+<li>energy value (double, Default: Not Set, Omittable: False)</li>
 <li>Unit (str, Default: Not Set, Omittable: False)</li>
 </ol></td></tr>
 
 <tr><td>dnadamage/directDamageUpper</td><td>Energy required for an SSB to definitely occur</td>
 <td><ol>
-<li>threshold (double, Default: Not Set, Omittable: False)</li>
+<li>energy value (double, Default: Not Set, Omittable: False)</li>
 <li>Unit (str, Default: Not Set, Omittable: False)</li>
 </ol></td></tr>
 
@@ -181,7 +181,6 @@ Note: molecule names are case insensitive.</td>
 <li>xlength (double, Default: Not Set, Omittable: False)</li>
 <li>ylength (double, Default: Not Set, Omittable: False)</li>
 <li>zlength (double, Default: Not Set, Omittable: False)</li>
-<li>Unit (str, Default: Not Set, Omittable: False)</li>
 </ol></td></tr>
 
 

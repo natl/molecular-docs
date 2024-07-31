@@ -12,7 +12,7 @@ permalink: /
 # **molecularDNA**
 {: .fs-9 }
 
-**Radiation-induced DNA damage simulations in Geant4** 
+**Radiation-induced DNA damage simulations in Geant4**
 {: .fs-6 .fw-300 }
 
 molecularDNA is a Geant4-DNA example built to allow easy simulation of
@@ -24,7 +24,7 @@ or dive into the documentation.
 
 A **tutorial** demonstrating molecularDNA is also available at this [link]({{ "http://geant4-dna.in2p3.fr/tutorials/HandsOn-molecularDNA_Osaka.pdf" | relative_url }}).
 
- <span style="color:red">**Important** : This version of molecularDNA (Geant4 11.2) is proposed as a **beta** version and may still contain bugs, thank you for your understanding.
+ <span style="color:red">**Important** : This version of molecularDNA (Geant4 11.3 BETA) is proposed as a **beta** version and may still contain bugs, thank you for your understanding.
  Please contact us for further detail. This example is for demonstration purpose and acts as an introductory tool to help users create their own applications;
  therefore users are advised to adapt the simulation parameters in their applications accordingly.</span>
 
