@@ -69,6 +69,15 @@ Rotations are optional and in degrees.
 <li>yrotation (double, Default: Not Set, Omittable: False)</li>
 <li>zrotation] (double, Default: Not Set, Omittable: False)</li>
 </ol></td></tr>
+
+
+<tr>
+<td>chromosome/plotData</td>
+<td>Save plot data to specified file</td>
+<td><ol><li>name (str, Default: Not Set, Omittable: False)</li></ol></td>
+</tr>
+
+
 </tbody>
 </table>
 
@@ -186,6 +195,34 @@ Note: molecule names are case insensitive.</td>
 
 </tbody></table>
 
+## dnatests
+
+
+<table ><thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead>
+
+<tbody>
+
+<tr><td>dnatests/basepairs</td>
+<td>Test chromosome placement classes</td>
+<td><ol>
+None
+</ol></td></tr>
+
+
+<tr><td>dnatests/chromosome</td>
+<td>Test base pair indices are correct</td>
+<td><ol>
+None
+</ol></td></tr>
+
+
+<tr><td>dnatests/uniqueid</td>
+<td>Test unique ID algorithm</td>
+<td><ol>
+None
+</ol></td></tr>
+
+</tbody></table>
 
 ## world
 
