@@ -11,7 +11,7 @@ This beta version of molecularDNA is based on the following previous works and i
 
 - Prediction of DNA rejoining kinetics and cell survival for V79 cells using Geant4-DNA, D. Sakata et al., Phys. Med. (2023) 102508 - [link]({{ "https://doi.org/10.1016/j.ejmp.2022.11.012" | relative_url }}) - [corrigendum]({{ "https://doi.org/10.1016/j.ejmp.2024.103375" | relative_url }})
 
-- Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, K. Chatzipapas et al., Prec. Radiat. Oncol. (2023) 1–11 - [link]({{ "https://doi.org/10.1002/pro6.1186" | relative_url }})
+- Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, K. Chatzipapas et al., Prec. Radiat. Oncol. 7 (2023) 4–14 - [link]({{ "https://doi.org/10.1002/pro6.1186" | relative_url }})
 
 - Performance Evaluation for Repair of HSGc-C5 Carcinoma Cell Using Geant4-DNA, D. Sakata et al., Cancers 13 (2021) 6046 - [link]({{ "https://doi.org/10.3390/cancers13236046" | relative_url }})
 
