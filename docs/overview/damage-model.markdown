@@ -43,7 +43,7 @@ Essentially:
 * Energy deposition above directDamageUpper always causes a break
 * Between these bounds, the likelihood of a break rises uniformly
 
-The likelihood of a break, for a lower bound of 5eV and an upper bound of 37.5eV is shown below
+The likelihood of a break, for a lower bound of 5 eV and an upper bound of 37.5 eV is shown below
 
 ![Linearly increasing damage likelihood for physical damage]({{"/assets/images/break-chance.png" | relative_url}}){: width="300px"}
 {: .text-center}
@@ -88,7 +88,7 @@ but assume these don't lead to SSBs. This requires the following settings for al
 
 ```
 /dnadamage/indirectOHBaseChance 1.0
-/dnadamage/inductionOHChance 0.00
+/dnadamage/inductionOHChance 0.0
 ```
 
 ## Damage classification model
@@ -116,3 +116,5 @@ gives $$\bar{x} = 4.09 \sqrt{t} \ \mathrm{nm} $$. Typically for simulations in m
 this means that a radical kill distance of 4nm-6nm yields reliable results, while larger radical kill
 distances would require scavenging to be more broadly implemented.
 
+## Reference 
+[1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–83.

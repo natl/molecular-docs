@@ -90,7 +90,7 @@ The default molecule names and sizes are:
 
 A simple way to increase the density of DNA in simulations is to place multiple chains of DNA in
 each placement volume.
-Multiple 'chains' can be placed in the one placement volume as shown below, provide that they each
+Multiple 'chains' can be placed in the one placement volume as shown below, provided that they each
 have a different chain_id in the data file.
 Here, we show graphically what a 1-chain and 4-chain placement volume could look like.
 
