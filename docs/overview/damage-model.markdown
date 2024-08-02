@@ -117,4 +117,4 @@ this means that a radical kill distance of 4nm-6nm yields reliable results, whil
 distances would require scavenging to be more broadly implemented.
 
 ## Reference 
-[1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483.
+[1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483 - [link]({{"https://doi.org/10.1080/095530097143798" | relative_url }}) 

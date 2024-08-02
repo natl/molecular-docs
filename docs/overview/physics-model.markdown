@@ -20,7 +20,7 @@ Please refer to [Geant4-DNA]({{ "http://geant4-dna.in2p3.fr/styled-3/styled-8/in
 **Important note from Geant4 11.1.1**: The DNA geometry is defined as being composed of DNA materials, for which the current public version of “molecularDNA” does not include cross sections. 
 Physical interactions are simulated within the DNA volumes assuming they contain liquid water only. 
 
-## Reference
+## References
 
 [1] Geant4-DNA example applications for track structure simulations in liquid water: a report from the Geant4-DNA Project, S. Incerti et al., Med. Phys. 45 (2018) e722-e739 - [link]({{ "https://doi.org/10.1002/mp.13048" | relative_url }})
 

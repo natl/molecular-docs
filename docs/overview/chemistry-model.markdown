@@ -72,8 +72,11 @@ To print reactions
 ```
 /scheduler/verbose 1
 ```
-## Reference 
+# References 
 [1] Modeling radiation chemistry in the Geant4 toolkit, M. Karamitros et al., Prog. Nucl. Sci. Tec. 2 (2011) 503-508 - [link]({{ "https://www.aesj.net/document/pnst002/503-508.pdf" | relative_url }})
+
 [2] Geant4-DNA simulation of the pre-chemical stage of water radiolysis and its impact on initial radiochemical yields, W.-G. Shin et al., Phys. Med. 88, 2021, 86-90 - [link]({{ "https://doi.org/10.1016/j.ejmp.2021.05.029" | relative_url }})
-[3] Review of chemical models and applications in Geant4-DNA: Report from the ESA BioRad III Project, H. N. Tran et al., Med. Phys. (2024) in press - [link]({{"https://doi.org/10.1002/mp.17256" | relative_url }}) 
-[4] Critical review of rate constants for reactions of hydrated electrons, hydrogen atoms and hydroxyl radicals (·OH/·O-) − in aqueous solution, G. V. Buxton et al., J. Phys. Chem. Ref. Data. 17 (1988) 513–886.
+
+[3] Review of chemical models and applications in Geant4-DNA: Report from the ESA BioRad III Project, H. N. Tran et al., Med. Phys. (2024) in press - [link]({{"https://doi.org/10.1002/mp.17256" | relative_url }})
+
+[4] Critical review of rate constants for reactions of hydrated electrons, hydrogen atoms and hydroxyl radicals (·OH/·O-) − in aqueous solution, G. V. Buxton et al., J. Phys. Chem. Ref. Data. 17 (1988) 513–886 - [link]({{"https://doi.org/10.1063/1.555805" | relative_url }}) 
