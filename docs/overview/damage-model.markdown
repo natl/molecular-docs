@@ -28,8 +28,7 @@ or a base molecule.
 The maximum distance from the centre of a molecule which can result in any energy deposition tied to that model
 is called the direct interaction range and can be set using `dnageom/interactionDirectRange`.
 
-To assign damage, the program looks up all molecules with the direct interaction range of a given energy deposition
-and assigns the damage to the closest molecule.
+To assign damage, the program looks up all molecules with the direct interaction range of a given energy deposition and assigns the damage to the closest molecule.
 
 ![Direct Damage is assigned to the closest molecule within a set radius]({{"/assets/images/dna-damage.png" | relative_url }})
 {: .text-center}
