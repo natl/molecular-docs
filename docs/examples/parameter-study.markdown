@@ -102,7 +102,7 @@ to open the Qt visualiser. Then use the mac file that you want, e.g.
 ```
 /control/execute cylinders.mac
 ```
-For such visualization, a large amount of RAM is needed. For example using cylinders DNA geometries, to visualize 200 cylinders, ~2.5 Gb are needed. For 2000 cylinders, ~11 Gb are needed.
+For such visualization, a large amount of RAM is needed. For example using cylinders DNA geometries, to visualize 200 cylinders, ~2.5 Gb are needed. For 2000 cylinders, ~11 Gb are needed. 
 
 ## Reference
 [1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483 - [link]({{"https://doi.org/10.1080/095530097143798" | relative_url }}) 

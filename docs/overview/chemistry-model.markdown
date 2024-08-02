@@ -35,7 +35,7 @@ While this is a considerable advantage in terms of computing time, the spatialâ€
 
 ## Reaction rates between free radicals and DNA
 Indirect damage occurs from the chemical reaction between a radical and a DNA molecule (see the table below). To induce indirect strand breaks, the chemical reaction occurs between the â€¢OH radical and the 2-deoxyribose-phosphate group. The probabilities to induce a single strand break are described in the
-[Indirect Damage]( {{ "docs/overview/damage-model" | relative_url }} ) through `DamageModel` class.
+[Indirect Damage]( {{ "docs/overview/damage-model" | relative_url }} ) through `DamageModel` class. 
 
 | Reaction                                  | Reaction rate (109 M-1s-1)[4] |
 |:------------------------------------------|:------------------------------|

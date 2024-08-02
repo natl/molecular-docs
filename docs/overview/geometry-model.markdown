@@ -17,8 +17,7 @@ permalink: /docs/overview/geometry-model
 
 ## Design principle
 
-The molecularDNA application was made to make it easy to define a DNA geometry, and then place it repeatedly to
-model a complex geometry at large scales, as below.
+The molecularDNA application was made to make it easy to define a DNA geometry, and then place it repeatedly to model a complex geometry at large scales, as below.
 
 ![Placements for DNA Geometries]({{"assets/images/placements.png" | relative_url}})
 {: .text-center}

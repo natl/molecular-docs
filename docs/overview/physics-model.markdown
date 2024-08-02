@@ -7,7 +7,7 @@ parent: Overview
 
 # Physics model
 
-Geant4-DNA Monte-Carlo track-structure code describes spatial distribution of energy depositions, interaction types in material of biological interest (water, DNA,...) based on interaction probabilities (cross sections). Geant4-DNA physics processes and models have been built in physics constructors which are designed to activate required physical models in a single command line. 
+Geant4-DNA Monte-Carlo track-structure code describes spatial distribution of energy depositions, interaction types in material of biological interest (water, DNA,...) based on interaction probabilities (cross sections). Geant4-DNA physics processes and models have been built in physics constructors which are designed to activate required physical models in a single command line.
 
 ![physics]({{"/assets/images/DNAPhysics.mp4" | relative_url}})
 {: .text-center}

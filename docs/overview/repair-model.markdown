@@ -6,7 +6,7 @@ parent: Overview
 ---
 # Repair model
 
-This model calculates the accumulated proteins yield, by considering four principal DSB repair pathways. 
+This model calculates the accumulated proteins yield, by considering four principal DSB repair pathways.
 
 These pathways are [1]: 
 - non-homologous end-joining (NHEJ),
@@ -28,7 +28,7 @@ the way that DSBs are repaired.
 - a(L) is the slope coefficient of linear dose dependence that describes DSB induction per unit of dose (/Gy/cell) and depends on LET. 
 
 # User guide
-To run the code, users need to open a terminal in the folder repair_survival_models containing the molecularDNArepair.py script
+To run the code, users need to open a terminal in the folder repair_survival_models containing the molecularDNArepair.py script 
 
 Then, 
 
