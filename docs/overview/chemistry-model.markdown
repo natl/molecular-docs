@@ -15,7 +15,7 @@ The energy transfer induced by ionizing radiation in a water medium occurs rapid
 These species are created in a very short time (from femtoseconds (fs) to picoseconds (ps)), mainly through electronic events during the pre-chemical stage. 
 These events—such as thermalization, solvation of sub-excitation electrons, electronic hole migration, and fast electronic recombination— can lead to chemical bond breaks and produce species. 
 
-The excited H2O* and ionized H2O+ water molecules are dissociated into radical species based on dissociation channels used in Geant4-DNA [1][2].
+The excited H2O* and ionized H2O+ water molecules are dissociated into radical species based on dissociation channels used in Geant4-DNA [1][2][3].
 
 ![pre-chemistry]({{"/assets/images/pre-chemistry.png" | relative_url}})
 {: .text-center}
@@ -37,7 +37,7 @@ While this is a considerable advantage in terms of computing time, the spatial�
 Indirect damage occurs from the chemical reaction between a radical and a DNA molecule (see the table below). To induce indirect strand breaks, the chemical reaction occurs between the •OH radical and the 2-deoxyribose-phosphate group. The probabilities to induce a single strand break are described in the
 [Indirect Damage]( {{ "docs/overview/damage-model" | relative_url }} ) through `DamageModel` class.
 
-| Reaction                                  | Reaction rate (109 M-1s-1)[3] |
+| Reaction                                  | Reaction rate (109 M-1s-1)[4] |
 |:------------------------------------------|:------------------------------|
 | 2-deoxyribose + •OH                       | 1.8                           |
 | Adenine + •OH                             | 6.1                           |
@@ -73,6 +73,7 @@ To print reactions
 /scheduler/verbose 1
 ```
 ## Reference 
-1. Modeling radiation chemistry in the Geant4 toolkit, M. Karamitros et al., Prog. Nucl. Sci. Tec. 2 (2011) 503-508.
-2. Geant4-DNA simulation of the pre-chemical stage of water radiolysis and its impact on initial radiochemical yields, W.-G. Shin et al., Phys. Med. 88, 2021, 86-90.
-3. Critical review of rate constants for reactions of hydrated electrons, hydrogen atoms and hydroxyl radicals (·OH/·O-) − in aqueous solution, Buxton GV et al., J. Phys. Chem. Ref. Data. 1988, 17,513–886.
+[1] Modeling radiation chemistry in the Geant4 toolkit, M. Karamitros et al., Prog. Nucl. Sci. Tec. 2 (2011) 503-508 - [link]({{ "https://www.aesj.net/document/pnst002/503-508.pdf" | relative_url }})
+[2] Geant4-DNA simulation of the pre-chemical stage of water radiolysis and its impact on initial radiochemical yields, W.-G. Shin et al., Phys. Med. 88, 2021, 86-90 - [link]({{ "https://doi.org/10.1016/j.ejmp.2021.05.029" | relative_url }})
+[3] Review of chemical models and applications in Geant4-DNA: Report from the ESA BioRad III Project, H. N. Tran et al., Med. Phys. (2024) in press - [link]({{"https://doi.org/10.1002/mp.17256" | relative_url }}) 
+[4] Critical review of rate constants for reactions of hydrated electrons, hydrogen atoms and hydroxyl radicals (·OH/·O-) − in aqueous solution, G. V. Buxton et al., J. Phys. Chem. Ref. Data. 17 (1988) 513–886.

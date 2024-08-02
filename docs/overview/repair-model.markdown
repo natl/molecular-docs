@@ -64,8 +64,8 @@ At lines 106 - 173, the input parameters for the repair model have been included
 At lines 371 - 377, the values of additional data published in Chatzipapas et al. [3] have been included.
 
 ## Reference
-[1] Performance Evaluation for Repair of HSGc-C5 Carcinoma Cell Using Geant4-DNA, D. Sakata et al., Cancers, 13, p. 6046, 2021 : [link]({{ "https://doi.org/10.3390/cancers13236046" | relative_url }})
+[1] Performance Evaluation for Repair of HSGc-C5 Carcinoma Cell Using Geant4-DNA, D. Sakata et al., Cancers 13 (2021) 6046 - [link]({{ "https://doi.org/10.3390/cancers13236046" | relative_url }})
 
-[2] A quantitative model of the major pathways for radiation-induced DNA double-strand break repair, Belov OV, et al. J Theor Biol., Feb 7;366:115-30, 2015 : [link]({{ "https://doi.org/10.1016/j.jtbi.2014.09.024" | relative_url }})
+[2] A quantitative model of the major pathways for radiation-induced DNA double-strand break repair, O. V. Belov et al., J. Theor. Biol., 366 (2015) 115-130 - [link]({{ "https://doi.org/10.1016/j.jtbi.2014.09.024" | relative_url }})
 
-[3] Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, Chatzipapas et al. Prec Radiat Oncol. 1–11. 2023 : [link]({{ "https://doi.org/10.1002/pro6.1186" | relative_url }})
+[3] Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, K. Chatzipapas et al., Prec. Radiat. Oncol. 7 (2023) 4-14 - [link]({{ "https://doi.org/10.1002/pro6.1186" | relative_url }})

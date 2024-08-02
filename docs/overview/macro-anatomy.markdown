@@ -165,7 +165,7 @@ coerced to a circular form, by placing a spherical chromosome as we do here:
 ```
 /chromosome/add cell sphere 200 0 0 0 nm
 ```
-The chromosome shape is sphere. The radius 200. The position :  0 0 0. The unit: nm nanometer.
+The chromosome name is cell, its shape is sphere. The radius 200. The position :  0 0 0. The unit: nm nanometer.
 
 The arguments for a cylinder are:
 - name cyl radius height x y z unit
@@ -173,7 +173,7 @@ The arguments for a cylinder are:
 
 The arguments for a ellipse are:
 - name ellipse sx sy sz x y z unit
-- name ellipse sx sy sz x y z unit rx ry rz
+- name ellipse sx sy sz x y z unit rx ry rz<br>
 Note that dimensions (sx, sy, sz) are semi-major axes and rotations are in degrees.
 
 ## Set up the damage model
@@ -184,15 +184,15 @@ The first of these determine how the geometry in particular influences the simul
 /dnageom/radicalKillDistance 4 nm
 /dnageom/interactionDirectRange 6 angstrom
 ```
-The *radical kill distance* tells the simulation to kill all chemistry tracks further than 4nm from the DNA.
+The *radical kill distance* tells the simulation to kill all chemistry tracks further than 4 nm from the DNA.
 This parameter is an implicit bound on scavenging. It basically assumes all chemical radicals that need to diffuse
-4nm to react with the DNA will be scavenged before they are able to interact chemically with the DNA molecule.
+4 nm to react with the DNA will be scavenged before they are able to interact chemically with the DNA molecule.
 
 The *direct interaction range* describes to what radius direct (physics-driven) energy depositions should be ascribed to
-a DNA molecule. Here, only energy depositions with 6Å can contribute a direct strand break.
+a DNA molecule. Here, only energy depositions with 6 Å can contribute a direct strand break.
 
 The next part of the damage model handles how direct strand breaks are calculated. The below snippet
-defines a step function where a cumulative deposition of 17.5eV or more in one event will cause a break.
+defines a step function where a cumulative deposition of 17.5 eV or more in one event will cause a break.
 ```
 /dnadamage/directDamageLower 17.5 eV
 /dnadamage/directDamageUpper 17.5 eV
@@ -203,7 +203,7 @@ The lower and upper values here describe a broken linear function where:
 * Energy deposition above directDamageUpper always causes a break
 * Between these bounds, the likelihood of a break rises uniformly
 
-An example of this, for a lower bound of 5eV and an upper bound of 37.5eV is shown below
+An example of this, for a lower bound of 5 eV and an upper bound of 37.5 eV is shown below
 
 ![Linearly increasing damage likelihood for physical damage]({{"/assets/images/break-chance.png" | relative_url}}){: width="300px"}
 {: .text-center}
@@ -212,7 +212,7 @@ Next, we define the likelihood of chemical damage occurring for different reacti
 ```
 /dnadamage/indirectOHBaseChance 1.0
 /dnadamage/indirectOHStrandChance 0.4
-/dnadamage/inductionOHChance 0.00
+/dnadamage/inductionOHChance 0.0
 ```
 Indirect damage here is what is typically discussed in most papers, it is the likelihood of a chemical
 reaction occurring between either <sup>•</sup>OH (in this case) and either a base or strand molecule. A lot of research
@@ -236,7 +236,7 @@ for the <sup>•</sup>OH, H<sup>+</sup> and e<sub>aq</sub> radicals respectively
 The simulation allows the Geant4 General Particle Source be used to define the beam.
 You can read the documentation [here](https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/GettingStarted/generalParticleSource.html).
 
-The source here defines a 100keV proton point source emitting isotropically.
+The source here defines a 100 keV proton point source emitting isotropically.
 ```
 # The General Particle Source is used to define a beam
 /gps/particle proton
