@@ -182,8 +182,8 @@ double helix.
 
 Our geometries have been built and tested with the primary axis of the double helix in a straight 
 DNA segment being the Z-axis. Similarly, a base pair on its own is built so that its height
-(the 3.4Å-long axis) is the Z-axis. We rely on this assumption to know that, in a frame of reference 
-prior to any rotation, a base pair should be roughly 3.4Å in height.
+(the 3.4 Å-long axis) is the Z-axis. We rely on this assumption to know that, in a frame of reference 
+prior to any rotation, a base pair should be roughly 3.4 Å in height.
 
 This assumption is used to help stop molecule placements intersecting each other. If you are developing
 geometries alongside the Python package [FractalDNA](http://github.com/natl/fractaldna), these
