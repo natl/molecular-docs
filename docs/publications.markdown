@@ -31,11 +31,13 @@ Find more on the [Geant4-DNA project]({{ "http://geant4-dna.in2p3.fr/styled-2/in
 
 - J.M.C. Brown
 - K. Chatzipapas
+- P. Dondero
 - M. Dordevic
 - S. Incerti
 - M. Karamitros
 - N. Lampe
 - D. Sakata
 - W.G. Shin
+- R. Stanzani
 - H. Tran
 - S. Zein
