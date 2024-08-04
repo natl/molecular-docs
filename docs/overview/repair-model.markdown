@@ -6,7 +6,7 @@ parent: Overview
 ---
 # Repair model
 
-This model calculates the accumulated proteins yield, by considering four principal DSB repair pathways. 
+This model calculates the accumulated proteins yield, by considering four principal DSB repair pathways.
 
 These pathways are [1]: 
 - non-homologous end-joining (NHEJ),
@@ -28,7 +28,7 @@ the way that DSBs are repaired.
 - a(L) is the slope coefficient of linear dose dependence that describes DSB induction per unit of dose (/Gy/cell) and depends on LET. 
 
 # User guide
-To run the code, users need to open a terminal in the folder repair_survival_models containing the molecularDNArepair.py script
+To run the code, users need to open a terminal in the folder repair_survival_models containing the molecularDNArepair.py script 
 
 Then, 
 
@@ -63,7 +63,7 @@ mass = 997 * 4 * 3.141592 * r3 / 3
 At lines 106 - 173, the input parameters for the repair model have been included. The default values are those included in Belov et al. [2]. Users can modify these parameters. More extensive description for what each parameter stands for, can be found in the corresponding articles [1-3].
 At lines 371 - 377, the values of additional data published in Chatzipapas et al. [3] have been included.
 
-## Reference
+## References
 [1] Performance Evaluation for Repair of HSGc-C5 Carcinoma Cell Using Geant4-DNA, D. Sakata et al., Cancers 13 (2021) 6046 - [link]({{ "https://doi.org/10.3390/cancers13236046" | relative_url }})
 
 [2] A quantitative model of the major pathways for radiation-induced DNA double-strand break repair, O. V. Belov et al., J. Theor. Biol., 366 (2015) 115-130 - [link]({{ "https://doi.org/10.1016/j.jtbi.2014.09.024" | relative_url }})

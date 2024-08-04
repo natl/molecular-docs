@@ -104,7 +104,7 @@ At the completion of the run, the following outputs in a ROOT file are saved:
 
 In multithreading mode, ROOT data files (molecular-dna_t*.root) associated with the threads are created. [ROOT6.x]( {{ "https://root.cern/install/" | relative_url }} ) should be installed to analyse these ROOT data files. 
 
-Several ROOT macro files are provided to join the ROOT data files into an unique ROOT data file (molecular-dna.root) and analyse the results:
+Several ROOT macro files are provided to join the ROOT data files into an unique ROOT data file (molecular-dna.root) and analyse the results: 
 - cylinders.C : to plot damage from cylinders geometry
 - ecoli.C : to plot damage from E.coli geometry
 - human_cell*.C : to plot damage and fragments distribution from human_cell*
@@ -126,7 +126,7 @@ A python macro file is provided to modify ROOT output in SDD [2] file format:
                  source /path/to/root/bin/thisroot.(c)sh,
                  do "pip install pyroot" and try again.
 
-## Reference
+## References
 
 [1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483 - [link]({{"https://doi.org/10.1080/095530097143798" | relative_url }}) 
 
