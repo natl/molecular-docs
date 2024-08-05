@@ -107,8 +107,7 @@ In multithreading mode, ROOT data files (molecular-dna_t*.root) associated with 
 Several ROOT macro files are provided to join the ROOT data files into an unique ROOT data file (molecular-dna.root) and analyse the results: 
 - cylinders.C : to plot damage from cylinders geometry
 - ecoli.C : to plot damage from E.coli geometry
-- human_cell*.C : to plot damage and fragments distribution from human_cell*
-geometries
+- human_cell.C and human_cell_alphas.C: to plot damage and fragments distribution from human cell geometries (as in [3] for human_cell_alphas.C)
 
 ```
 root cylinders.C
@@ -131,3 +130,5 @@ A python macro file is provided to modify ROOT output in SDD [2] file format:
 [1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483 - [link]({{"https://doi.org/10.1080/095530097143798" | relative_url }}) 
 
 [2] A new standard DNA damage (SDD) data format, J. Schuemann et al., Rad. Res. 191 (2019) 76-92 - [link]({{"https://doi.org/10.1667/rr15209.1" | relative_url }})  
+
+[3] Geant4-DNA simulation of human cancer cells irradiation with helium ion beams, K. Chatzipapas et al., Phys. Med. 112 (2023) 102613 - [link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }})
