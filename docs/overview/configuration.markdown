@@ -32,7 +32,7 @@ Set to zero to score placement volumes independently
 
 
 </td><td></td></tr><tr><td>analysisDNA/fileName</td><td>ROOT output file name
-</td><td><ol><li>ROOT output file name (str, Default: Not Set, Omittable: False)</li></ol></td></tr></tbody></table>
+</td><td><ol><li>ROOT output file name (str, Default: Not Set, Omittable: False)</li></ol></td></tr></tbody></table> 
 
 
 
@@ -47,15 +47,16 @@ Set to zero to score placement volumes independently
 
 
 <table>
-<thead><tr><th>command</th><th>description</th><th>parameters</th></tr></thead>
+<thead><tr><th>command</th><th>description</th><th>parameters (example for cyl)</th></tr></thead>
 <tbody>
 <tr><td>chromosome/add</td><td>
 Add a chromosomal region for analysis of damage. <br>
 Format: shape name geometry-commands<br>
-shape is sphere or cyl<br>
+shape is sphere or cyl or ellipse<br>
 geometry-commands are:<br>
 - for sphere: radius x y z unit [rx ry rz]<br>
 - for cyl: radius height x y z unit [rx ry rz]<br>
+- for ellipse: x-half-axis y-half-axis z-half-axis x y z unit [rx ry rz]<br>
 Rotations are optional and in degrees.
 </td>
 <td><ol>
