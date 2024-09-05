@@ -51,13 +51,26 @@ Set to zero to score placement volumes independently
 <tbody>
 <tr><td>chromosome/add</td><td>
 Add a chromosomal region for analysis of damage. <br>
-Format: name shape geometry-commands<br>
-shape is sphere or cyl or ellipse<br>
+<br>
+Format: shape name geometry-commands<br>
+<br>
+shape is: sphere or cyl or ellipse<br>
+<br>
 geometry-commands are:<br>
 - for sphere: radius x y z unit [rx ry rz]<br>
 - for cyl: radius height x y z unit [rx ry rz]<br>
 - for ellipse: x-half-axis y-half-axis z-half-axis x y z unit [rx ry rz]<br>
+
+<br>
 Rotations are optional and in degrees.
+
+<br>
+<br>
+For example, for an ellipsoid chromosomal region corresponding to a cell nucleus, one can use the following command (as in the macro human_cell.mac):
+<br>
+<br>
+/chromosome/add cell ellipse 7100 2500 7100 0 0 0 nm 0 0 0
+
 </td>
 <td><ol>
 <li>radius (double, Default: Not Set, Omittable: False)</li>
