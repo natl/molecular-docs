@@ -51,7 +51,7 @@ Set to zero to score placement volumes independently
 <tbody>
 <tr><td>chromosome/add</td><td>
 Add a chromosomal region for analysis of damage. <br>
-Format: shape name geometry-commands<br>
+Format: name shape geometry-commands<br>
 shape is sphere or cyl or ellipse<br>
 geometry-commands are:<br>
 - for sphere: radius x y z unit [rx ry rz]<br>
