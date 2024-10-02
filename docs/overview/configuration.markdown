@@ -54,11 +54,12 @@ Add a chromosomal region for analysis of damage. <br>
 <br>
 Format: shape name geometry-commands<br>
 <br>
-shape is: sphere or cyl or ellipse<br>
+shape is: sphere or cyl or rod or ellipse<br>
 <br>
 geometry-commands are:<br>
 - for sphere: radius x y z unit [rx ry rz]<br>
 - for cyl: radius height x y z unit [rx ry rz]<br>
+- for rod: radius height x y z unit [rx ry rz]<br>
 - for ellipse: x-half-axis y-half-axis z-half-axis x y z unit [rx ry rz]<br>
 
 <br>
