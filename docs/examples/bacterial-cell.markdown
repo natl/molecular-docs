@@ -50,7 +50,7 @@ The genome has been produced using four side-by-side Hilbert curve fractals (see
 {: .text-center}
 
 ## Particle source
-Electrons are simulated coming from an ellipse enclosing the bacterial cell (of the same dimensions as the cell) with energy 0.4 MeV. The angular distribution of electron trajectories coming from the cell surface follows a cosine law, which simulates an isotropic radiation environment.
+Electrons are simulated coming from an ellipse enclosing the bacterial cell (of the same dimensions as the cell) with energy 9.999 keV. The angular distribution of electron trajectories coming from the cell surface follows a cosine law, which simulates an isotropic radiation environment.
 ```
 /gps/pos/type Surface
 /gps/pos/shape Ellipsoid
