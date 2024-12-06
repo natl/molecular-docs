@@ -48,7 +48,7 @@ At the completion of the run, the following outputs in a ROOT file are saved:
 ### Tuples
 
 - Primary Source
-  1. Primary 
+  1. Primary
   2. Energy
   3. PosX in um
   4. PosY in um
@@ -59,7 +59,7 @@ At the completion of the run, the following outputs in a ROOT file are saved:
 
 
 - Source (Break Source Frequency)
-  1. Primary 
+  1. Primary
   2. Energy
   3. None
   4. SSBd
@@ -72,7 +72,7 @@ At the completion of the run, the following outputs in a ROOT file are saved:
 
 
 - Damage (DNA damage locations)
-  1. Event 
+  1. Event
   2. Primary
   3. Energy
   4. TypeClassification
@@ -102,9 +102,9 @@ At the completion of the run, the following outputs in a ROOT file are saved:
 
 ## Analysis files
 
-In multithreading mode, ROOT data files (molecular-dna_t*.root) associated with the threads are created. [ROOT6.x]( {{ "https://root.cern/install/" | relative_url }} ) should be installed to analyse these ROOT data files. 
+In multithreading mode, ROOT data files (molecular-dna_t*.root) associated with the threads are created. [ROOT6.x]( {{ "https://root.cern/install/" | relative_url }} ){:target="_blank"} should be installed to analyse these ROOT data files.
 
-Several ROOT macro files are provided to join the ROOT data files into an unique ROOT data file (molecular-dna.root) and analyse the results: 
+Several ROOT macro files are provided to join the ROOT data files into an unique ROOT data file (molecular-dna.root) and analyse the results:
 - cylinders.C : to plot damage from cylinders geometry
 - ecoli.C : to plot damage from E.coli geometry
 - human_cell.C and human_cell_alphas.C: to plot damage and fragments distribution from human cell geometries (as in [3] for human_cell_alphas.C)
@@ -118,17 +118,17 @@ User can also join the ROOT files (molecular-dna_t*.root) using the following co
 ```
 hadd -O -f molecular-dna.root molecular-dna_t*.root
 ```
-  
+
 A python macro file is provided to modify ROOT output in SDD [2] file format:
 - createSDD.py : to use it, insert the command "python3 createSDD.py".
-                 If error with ROOT, simply 
+                 If error with ROOT, simply
                  source /path/to/root/bin/thisroot.(c)sh,
                  do "pip install pyroot" and try again.
 
 ## References
 
-[1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483 - [link]({{"https://doi.org/10.1080/095530097143798" | relative_url }}) 
+[1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483 - [link]({{"https://doi.org/10.1080/095530097143798" | relative_url }}){:target="_blank"}
 
-[2] A new standard DNA damage (SDD) data format, J. Schuemann et al., Rad. Res. 191 (2019) 76-92 - [link]({{"https://doi.org/10.1667/rr15209.1" | relative_url }})  
+[2] A new standard DNA damage (SDD) data format, J. Schuemann et al., Rad. Res. 191 (2019) 76-92 - [link]({{"https://doi.org/10.1667/rr15209.1" | relative_url }}){:target="_blank"}  
 
-[3] Geant4-DNA simulation of human cancer cells irradiation with helium ion beams, K. Chatzipapas et al., Phys. Med. 112 (2023) 102613 - [link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }})
+[3] Geant4-DNA simulation of human cancer cells irradiation with helium ion beams, K. Chatzipapas et al., Phys. Med. 112 (2023) 102613 - [link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }}){:target="_blank"}
