@@ -19,7 +19,7 @@ molecularDNA is a Geant4-DNA example built to allow easy simulation of
 radiation-induced DNA damage with *flexible geometries* and well defined
 *damage parameters*.
 
-Get started right away in *geant4/examples/extended/medical/dna/moleculardna* with a *library of pre-existing geometries*,
+Get started right away in the Geant4 *geant4/examples/advanced/dna/moleculardna* directory with a *library of pre-existing geometries*,
 or dive into the documentation.
 
 A **tutorial** demonstrating molecularDNA is also available at this [link]({{ "http://geant4-dna.in2p3.fr/tutorials/HandsOn-molecularDNA.pdf" | relative_url }}){:target="_blank"}.
