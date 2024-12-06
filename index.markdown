@@ -24,9 +24,7 @@ or dive into the documentation.
 
 A **tutorial** demonstrating molecularDNA is also available at this [link]({{ "http://geant4-dna.in2p3.fr/tutorials/HandsOn-molecularDNA_Osaka.pdf" | relative_url }}).
 
- <span style="color:red">**Important** : This version of molecularDNA (Geant4 11.3 BETA) is proposed as a **beta** version and may still contain bugs, thank you for your understanding.
- Please contact us for further detail. This example is for demonstration purpose and acts as an introductory tool to help users create their own applications;
- therefore users are advised to adapt the simulation parameters in their applications accordingly.</span>
+ <span style="color:red">**Important** : This example is for demonstration purposes and is intended as an introductory tool for users to create their applications. Therefore, users are advised to adapt and optimize the simulation parameters in their applications accordingly.</span>
 
 ![humanCell]({{"/assets/images/humanCell.png" | relative_url}})
 {: .text-center}
@@ -39,5 +37,4 @@ A **tutorial** demonstrating molecularDNA is also available at this [link]({{ "h
 Want to know more about how it all works? You'll want to visit our [Overview]( {{ "docs/overview" | relative_url }} ) page.
 
 --
-Updated on Aug. 4, 2024 
-
+Updated on Aug. 4, 2024
