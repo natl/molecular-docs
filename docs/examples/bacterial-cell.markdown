@@ -22,7 +22,7 @@ parent: Available geometries
 This example uses the E. coli bacterium geometry, which imitates the genome of the bacterium. The configuration has been modified from its original version in response to a bug identified following the publication of the beta version. The simulation can be run using the **ecoli.mac** macro file.
 
 ## Geometry
-The genome has been produced using four side-by-side Hilbert curve fractals (see [FractalDNA]({{"http://natl.github.io/fractaldna/" | relative_url}})). This creates 16,384 placement volumes that are assumed to be cubic boxes with a side length of 50 nm. This was composed of 3,600 straight segments, and 5,652 turned segments of DNA. We only placed placement volumes that fell inside an ellipsoid with a semi-major axis of 900 nm and two equal semi-minor axes of 400 nm, creating an elliptical geometry that corresponded roughly to the dimensions of an E. coli bacterium containing 4,864 placement volumes. The final geometry (Figure) contained 4.63 Mbp, similar again to the length of an E. coli genome. Here's an example of a macro file:
+The genome has been produced using four side-by-side Hilbert curve fractals (see [FractalDNA]({{"http://natl.github.io/fractaldna/" | relative_url}}){:target="_blank"}). This creates 16,384 placement volumes that are assumed to be cubic boxes with a side length of 50 nm. This was composed of 3,600 straight segments, and 5,652 turned segments of DNA. We only placed placement volumes that fell inside an ellipsoid with a semi-major axis of 900 nm and two equal semi-minor axes of 400 nm, creating an elliptical geometry that corresponded roughly to the dimensions of an E. coli bacterium containing 4,864 placement volumes. The final geometry (Figure) contained 4.63 Mbp, similar again to the length of an E. coli genome. Here's an example of a macro file:
 
 
 ```
@@ -103,5 +103,5 @@ for example: EaqStrandHits is e_aq + DNA backbone
 
 ## Important notes
 
-- The physics and chemistry models used since the 2018 [publication]({{"https://doi.org/10.1016/j.ejmp.2017.12.008"| relative_url}}) of this model have evolved significantly, making comparison to past works difficult.
+- The physics and chemistry models used since the 2018 [publication]({{"https://doi.org/10.1016/j.ejmp.2017.12.008"| relative_url}}){:target="_blank"} of this model have evolved significantly, making comparison to past works difficult.
 - Further, an issue was identified in the geometry implementation of the 2018 work that is now addressed in this preliminary [erratum]({{"docs/notes-and-errata/correction-to-lampe-2018" | relative_url}}) and it has been fixed in Geant4. Please also note that the authors mistakenly wrote microns to describe the length of the cell, when the unit actually used (correctly) was nanometers.

@@ -60,7 +60,7 @@ The phosphate part of the sugar-phosphate backbone rarely takes part in reaction
 so the main factors in the indirect damage model are the likelihoods that a reaction
 between a radical and the DNA backbone lead to a single strand break (SSB).
 
-Each probability is defined through the macro interface as below : 
+Each probability is defined through the macro interface as below :
 
 | Reaction                                                              | Macro Command                        |
 |:----------------------------------------------------------------------|:-------------------------------------|
@@ -115,5 +115,5 @@ gives $$\bar{x} = 4.09 \sqrt{t} \ \mathrm{nm} $$. Typically for simulations in m
 this means that a radical kill distance of 4nm-6nm yields reliable results, while larger radical kill
 distances would require scavenging to be more broadly implemented.
 
-## References 
-[1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483 - [link]({{"https://doi.org/10.1080/095530097143798" | relative_url }}) 
+## References
+[1] Computational modelling of lowenergy electron-induced DNA damage by early physical and chemical events, H. Nikjoo et al., Int. J. Radiat. Biol. 71 (1997) 467–483 - [link]({{"https://doi.org/10.1080/095530097143798" | relative_url }}){:target="_blank"} 

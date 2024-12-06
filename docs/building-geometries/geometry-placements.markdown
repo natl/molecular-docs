@@ -12,7 +12,7 @@ The geometry placements here were built using the [FractalDNA package]({{"/docs/
 package in Python. Accompanying each geometry is the Python code to
 generate it.
 
-These geometries are based on iterating a fractal [L-string](https://en.wikipedia.org/wiki/L-system).
+These geometries are based on iterating a fractal [L-string](https://en.wikipedia.org/wiki/L-system){:target="_blank"}.
 
 ## Square geometry
 
@@ -27,8 +27,8 @@ A square geometry can be easily generated using the `X` fractal seed.
 - Download with 4 iterations ([link]({{"assets/csv/fractal-X-4-centred.csv" | relative_url}}))
 - Download with 5 iterations ([link]({{"assets/csv/fractal-X-5-centred.csv" | relative_url}}))
 - Download with 6 iterations ([link]({{"assets/csv/fractal-X-6-centred.csv" | relative_url}}))
-- Download with 7 iterations ([link](https://zenodo.org/record/6658889/files/fractal-X-7-centred.csv.zip?download=1))
-- Download with 8 iterations ([link](https://zenodo.org/record/6658889/files/fractal-X-8-centred.csv.zip?download=1))
+- Download with 7 iterations ([link](https://zenodo.org/record/6658889/files/fractal-X-7-centred.csv.zip?download=1){:target="_blank"})
+- Download with 8 iterations ([link](https://zenodo.org/record/6658889/files/fractal-X-8-centred.csv.zip?download=1){:target="_blank"})
 
 ```
 # Start with the initial L-String X for a Hilbert Curve
@@ -121,15 +121,15 @@ are identical to those in the source geometry (left)
 ## Generating random placements
 
 
-It can be useful to generate randomised volumes for testing a simulation (see [parameter study]({{ "/docs/examples/parameter-study" | relative_url }})). 
-This was the subject of [this article](https://doi.org/10.1016/j.ejmp.2018.02.011).
+It can be useful to generate randomised volumes for testing a simulation (see [parameter study]({{ "/docs/examples/parameter-study" | relative_url }})).
+This was the subject of [this article](https://doi.org/10.1016/j.ejmp.2018.02.011){:target="_blank"}.
 
 To generate a randomised volume, the `fractaldna.structure_models.random_placements`
 is available.
 
-In that paper, 200,000 non overlapping prisms were simulated in a r=3000nm 
+In that paper, 200,000 non overlapping prisms were simulated in a r=3000nm
 ball.
-The prisms had dimensions 30x30x100nm and a sample file can be 
+The prisms had dimensions 30x30x100nm and a sample file can be
 downloaded [here]({{"assets/csv/prisms_200k_r3000.csv" | relative_url}}).
 
 Note that the saved file doesn't contain the dimensions of the prisms as this
