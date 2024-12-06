@@ -15,7 +15,7 @@ permalink: /
 **Radiation-induced DNA damage simulations in Geant4**
 {: .fs-6 .fw-300 }
 
-molecularDNA is a Geant4-DNA example built to allow easy simulation of
+molecularDNA is a **Geant4-DNA example** built to allow easy simulation of
 radiation-induced DNA damage with *flexible geometries* and well defined
 *damage parameters*.
 
