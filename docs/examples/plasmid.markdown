@@ -6,7 +6,7 @@ permalink: docs/examples/plasmid
 parent: Available geometries
 ---
 
-# Parameter study (plasmid.mac)
+# Plasmid (plasmid.mac)
 
 ## Table of contents
 {: .no_toc .text-delta }
