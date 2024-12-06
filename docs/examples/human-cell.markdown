@@ -99,7 +99,7 @@ for example: EaqStrandHits is e_aq + DNA backbone
 *Fragments distribution of DNA. A fragment is defined by a distance between two DSBs.*
 
 ## List of macros
-The example provides three macros to simulate the cellular irradiation of three different cell types, see Phys. Med. 112 (2023) 102613 ([link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }}){:target="_blank"}) :
+The example provides three macros to simulate the cellular irradiation of four different cell types, see Phys. Med. 112 (2023) 102613 ([link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }}){:target="_blank"}) and Phys. Med. 127 (2024) 104389 ([link]({{ "https://doi.org/10.1016/j.ejmp.2024.104839" | relative_url }}){:target="_blank"}) :
 
 - **human_cell.mac** : this is the default geometry of a simplified human fibroblast, as described above (ellipsoid with semi-dimensions 7.1 μm x 2.5  μm x 7.1 μm)
 
@@ -108,3 +108,6 @@ The example provides three macros to simulate the cellular irradiation of three 
 
 
 - **human_cell_MCF7.mac** : this is a simplified model of a human breast adenocarcinoma, represented by an ellipsoid with semi-dimensions 7.005 μm × 2.50 μm × 5.30 μm
+
+
+- **human_cell_chromosomes.mac** : this is a simplified model of a human human fibroblast containing chromosomes, represented by an ellipsoid with semi-dimensions 10.575 μm × 3.45 μm × 10.575 μm
