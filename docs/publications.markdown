@@ -7,9 +7,11 @@ nav_order: 5
 # Publications
 {: .no_toc }
 
-This beta version of molecularDNA is based on the following previous works and is currently being further developed.
+This version of molecularDNA is based on the following previous works and is currently being further developed.
 
 - Development of a novel computational technique to create DNA and cell geometrical models for Geant4-DNA, K. Chatzipapas et al., Phys. Med. 127 (2024) 104389 - [link]({{ "https://doi.org/10.1016/j.ejmp.2024.104839" | relative_url }}){:target="_blank"}
+
+- Quantitative analysis of dose dependent DNA fragmentation in dry pBR322 plasmid using long read sequencing and Monte Carlo simulations, P. Beaudier et al., Sc. Rep. 14 (2024) 18650 - [link]({{ "https://doi.org/10.1038/s41598-024-69406-3" | relative_url }}){:target="_blank"}
 
 - Geant4-DNA simulation of human cancer cells irradiation with helium ion beams, K. Chatzipapas et al., Phys. Med. 112 (2023) 102613 - [link]({{ "https://doi.org/10.1016/j.ejmp.2023.102613" | relative_url }}){:target="_blank"}
 
