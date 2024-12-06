@@ -90,6 +90,6 @@ cell  = "test"
 ```
 
 ## References
-[1] Two-lesion kinetic model of double-strand break rejoining and cell killing, R. D. Stewart, Radiat. Res. 156 (2001) 365-378 - [link]({{ "https://doi.org/10.1667/0033-7587(2001)156[0365:TLKMOD]2.0.CO;2" | relative_url }})
+[1] Two-lesion kinetic model of double-strand break rejoining and cell killing, R. D. Stewart, Radiat. Res. 156 (2001) 365-378 - [link]({{ "https://doi.org/10.1667/0033-7587(2001)156[0365:TLKMOD]2.0.CO;2" | relative_url }}){:target="_blank"}
 
-[2] Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, K. Chatzipapas et al. Prec. Radiat. Oncol. 7 (2023) 4-14 - [link]({{ "https://doi.org/10.1002/pro6.1186" | relative_url }})
+[2] Simulation of DNA damage using Geant4-DNA: an overview of the “molecularDNA” example application, K. Chatzipapas et al. Prec. Radiat. Oncol. 7 (2023) 4-14 - [link]({{ "https://doi.org/10.1002/pro6.1186" | relative_url }}){:target="_blank"}

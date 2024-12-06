@@ -9,7 +9,7 @@ permalink: docs/overview/macro-anatomy
 # molecularDNA macro files
 {: .no_toc }
 
-Macro files define simulations in Geant4. The molecularDNA example contains a number of additional 
+Macro files define simulations in Geant4. The molecularDNA example contains a number of additional
 commands that allow DNA damage simulations to take place. The full list of commands is written
 in [configuration]({{ "/docs/overview/configuration" | relative_url }}).
 
@@ -88,7 +88,7 @@ That's a lot to digest. But we can break down the macro file into a few componen
 
 ## Set up the world
 
-The first command to run is to set the size of the world. The simulation runs in a square world and 
+The first command to run is to set the size of the world. The simulation runs in a square world and
 you can set the side length as below:
 
 ```
@@ -135,7 +135,7 @@ turned with a 90˚ twist section.
 /dnageom/placementVolume straight geometries/1strand_50nm_straight.txt
 ```
 
-These are referenced by the their names turn, straight and turntwist in the geometry 
+These are referenced by the their names turn, straight and turntwist in the geometry
 definition file which is loaded as follows:
 
 ```
@@ -234,7 +234,7 @@ for the <sup>•</sup>OH, H<sup>+</sup> and e<sub>aq</sub> radicals respectively
 ## Set up the beam
 
 The simulation allows the Geant4 General Particle Source be used to define the beam.
-You can read the documentation [here](https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/GettingStarted/generalParticleSource.html).
+You can read the documentation [here](https://geant4-userdoc.web.cern.ch/UsersGuides/ForApplicationDeveloper/html/GettingStarted/generalParticleSource.html){:target="_blank"}.
 
 The source here defines a 100 keV proton point source emitting isotropically.
 ```
@@ -248,7 +248,7 @@ The source here defines a 100 keV proton point source emitting isotropically.
 
 ## Set up analysis rules
 
-The commands under analysisDNA allow the analysis to be modified. Notably, you'll want to set the output file name: 
+The commands under analysisDNA allow the analysis to be modified. Notably, you'll want to set the output file name:
 ```
 /analysisDNA/fileName my_file.root
 ```

@@ -7,7 +7,7 @@ nav_order: 4
 # Running the example
 {: .no_toc }
 
-Geant4.11.1 or higher is required (see [Geant4]({{ "https://geant4.web.cern.ch" | relative_url }})).
+Geant4.11.1 or higher is required (see [Geant4]({{ "https://geant4.web.cern.ch" | relative_url }}){:target="_blank"}).
 
 To build the example:
 
