@@ -29,7 +29,7 @@ This beta version of molecularDNA is based on the following previous works and i
 
 - Mechanistic DNA Damage Simulations in Geant4-DNA Part 1: A parameter study in a simplified geometry, N. Lampe et al., Phys. Med. 48 (2018) 135-145 - [link]({{ "https://doi.org/10.1016/j.ejmp.2018.02.011" | relative_url }}){:target="_blank"}
 
-A **tutorial** demonstrating molecularDNA is also available at this [link]({{ "http://geant4-dna.in2p3.fr/tutorials/HandsOn-molecularDNA_Osaka.pdf" | relative_url }}){:target="_blank"}.
+A **tutorial** demonstrating molecularDNA is also available at this [link]({{ "http://geant4-dna.in2p3.fr/tutorials/HandsOn-molecularDNA.pdf" | relative_url }}){:target="_blank"}.
 
 Find more on the [Geant4-DNA project]({{ "http://geant4-dna.in2p3.fr/styled-2/index.html" | relative_url }}){:target="_blank"} website.
 
