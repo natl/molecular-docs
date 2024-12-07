@@ -94,6 +94,12 @@ It calculates damage statistics and plots the five following quantities:
 - percentage of number of damages per plasmids
 - percentage of number of damages per event
 
+![plasmid]({{"/assets/images/plasmid.png" | relative_url}})
+{: .text-left}
+
+*Example of damage distribution in the plasmid population.*
+
+
 ## Reference
 
 [1] Quantitative analysis of dose dependent DNA fragmentation in dry pBR322 plasmid using long read sequencing and Monte Carlo simulations, P. Beaudier et al., Sc. Rep. 14 (2024) 18650 - [link]({{ "https://doi.org/10.1038/s41598-024-69406-3" | relative_url }}){:target="_blank"}
