@@ -49,7 +49,7 @@ The chromosome as region of interest for damage analysis is defined using:
 ```
 
 ## Particle source
-A proton plane square surce of protons is used, shooting a parallel beam.
+A proton plane square source of protons is used, shooting a parallel beam.
 
 ```
 /gps/pos/type Plane
