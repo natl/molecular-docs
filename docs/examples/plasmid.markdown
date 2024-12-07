@@ -18,7 +18,7 @@ parent: Available geometries
 
 ## Overview
 The example simulates the irradiation of a cube of liquid water (side 4.84 um)
-containing around 10 000 plasmids (pBR322, 4367 base pairs each) in a supercoiled
+containing around 10000 plasmids (pBR322, 4367 base pairs each) in a supercoiled
 conformation and randomly oriented.
 
 ## Geometry
@@ -27,7 +27,7 @@ Plasmid geometry is implemented in the provided macro file **plasmid.mac**. The 
 *prisms_plasmids_positions_500ngpul.txt* contains all plasmid positions in the
 irradiated volume.
 
-Radical kill distance and direct interaction range are set to 9 nm and 10 angstrom,
+Radical kill distance and direct interaction range are set to 9 nm and 7 angstrom,
 respectively.
 
 ```
@@ -40,7 +40,6 @@ respectively.
 
 /dnageom/radicalKillDistance 9 nm
 /dnageom/interactionDirectRange 7 angstrom
-
 ```
 
 The chromosome as region of interest for damage analysis is defined using:
