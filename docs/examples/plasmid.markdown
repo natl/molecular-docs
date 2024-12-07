@@ -86,7 +86,14 @@ A probability of 65% is set for the indirect induction of strand break.
 
 ## Results
 Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}}))
-is analysed by using the **plasmid.C** ROOT macro file. It calculates the following quantities:
+is analysed by using the **plasmid.C** ROOT macro file.
+
+It calculates damage statistics and plots the five following quantities:
+- distribution of damage per plasmid,
+- number of direct SSB per event
+- number of direct DSB per event
+- percentage of number of damages per plasmids
+- percentage of number of damages per event
 
 ## Reference
 
