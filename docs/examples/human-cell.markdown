@@ -5,7 +5,7 @@ nav_order: 3
 permalink: docs/examples/human-cell
 parent: Available geometries
 ---
-# Human cell (human_cell.mac)
+# Human cell (human_cell*.mac)
 
 ## Table of contents
 {: .no_toc .text-delta }
