@@ -88,7 +88,7 @@ Output (see [analysis]({{"docs/overview/results-and-analysis"| relative_url}}))
 is analysed by using the **plasmid.C** ROOT macro file.
 
 It calculates damage statistics and plots the five following quantities:
-- distribution of damage per plasmid,
+- distribution of damage per plasmid
 - number of direct SSB per event
 - number of direct DSB per event
 - percentage of number of damages per plasmids
