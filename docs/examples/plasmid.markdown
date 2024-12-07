@@ -94,7 +94,7 @@ It calculates damage statistics and plots the five following quantities:
 - percentage of number of damages per plasmids
 - percentage of number of damages per event
 
-![plasmid]({{"/assets/images/plasmid.png" | relative_url}})
+![plasmid]({{"/assets/images/plasmids.png" | relative_url}})
 {: .text-left}
 
 *Example of damage distribution in the plasmid population.*
