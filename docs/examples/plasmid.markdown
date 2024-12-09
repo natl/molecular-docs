@@ -14,8 +14,6 @@ parent: Available geometries
 1. TOC
 {:toc}
 
-*This is a preliminary version for Geant4 11.3.*
-
 ## Overview
 The example simulates the irradiation of a cube of liquid water (side 4.84 um)
 containing around 10000 plasmids (pBR322, 4367 base pairs each) in a supercoiled
@@ -42,16 +40,15 @@ respectively.
 /dnageom/interactionDirectRange 7 angstrom
 ```
 
-![plasmid]({{"/assets/images/plasmids2.png" | relative_url}})
-{: .text-left}
-
-*Examples of plasmid geometries, from ref. [1]*
-
-
 The chromosome as region of interest for damage analysis is defined using:
 ```
 /chromosome/add plasmid box 2.21 2.21 2.42 0 0 0 um
 ```
+
+![plasmid]({{"/assets/images/plasmids2.png" | relative_url}})
+{: .text-left}
+
+*Examples of plasmid geometries, from ref. [1]*
 
 ## Particle source
 A proton plane square source of protons is used, shooting a parallel beam.
