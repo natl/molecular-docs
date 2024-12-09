@@ -42,6 +42,12 @@ respectively.
 /dnageom/interactionDirectRange 7 angstrom
 ```
 
+![plasmid]({{"/assets/images/plasmids2.png" | relative_url}})
+{: .text-left}
+
+*Examples of plasmid geometries, from ref. [1]*
+
+
 The chromosome as region of interest for damage analysis is defined using:
 ```
 /chromosome/add plasmid box 2.21 2.21 2.42 0 0 0 um
